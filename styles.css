@@ -22,7 +22,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 .xologo{
 background-color: #1a2a33;
@@ -41,8 +41,18 @@ align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 12px;
-border-bottom: solid 5px black;
-  
+  box-shadow: rgb(16, 33, 42) 0px -8px 0px 0px inset;  
+}
+.selectioncard p{
+  color: rgb(168, 191, 201);
+  font-size: 14px;
+  opacity: 0.5;
+
+}
+.selectioncard h1{
+  color: rgb(168, 191, 201);
+  font-size: 16px;
+  word-spacing: 10px;
 }
 .o{
   display: flex;
@@ -67,48 +77,50 @@ border-bottom: solid 5px black;
   border-radius: 12px;
 }
 
-.xcard,.ocard{
+#x,#o{
+  cursor: pointer;
+}
+
+.x,.o{
 height: 54px;
 width: 200px;
-background-color: green;
 border-radius: 12px;
+background-color: rgb(26, 42, 51);
+
 }
 
-.xcard img,.ocard img{
+.x img,.o img{
   height: 32px;
   width: 32px;
-  padding-top: 10px;
+  padding-top: 3px;
 }
-.ocard{
-  background-color: rgb(168, 191, 201);
-  
-}
-.xcard{
-  background-color: rgb(26, 42, 51);
 
-}
 
 .btncpu{
   width: 100%;
   border-radius: 12px;
   background-color: rgb(242, 177, 55);
   height: 65px;
-  border-bottom-color: rgb(26, 42, 51);
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-
-  
-
+  box-shadow: rgb(204, 139, 19) 0px -8px 0px 0px inset;
+  border: none;
+  cursor: pointer; 
 }
 .btnplayer{
   width: 100%;
   border-radius: 12px;
   background-color: rgb(49, 195, 189);
   height: 65px;
-  border-bottom-color: rgb(26, 42, 51);
+  box-shadow:rgb(17, 140, 135) 0px -8px 0px 0px inset;
+  border: none;
+  cursor: pointer;
+}
+
+.selected-character{
+background-color: #a8bfc9;
   
 }
-/* Main Menu end styling */
 
 .countainer2{
   display: none;
@@ -134,11 +146,18 @@ border-radius: 12px;
   height: 20px;
   width: 76px;
   background-color: rgb(31, 54, 65);
-  padding: 15px 25px;
+  padding: 15px 15px 15px 40px;
   border-radius: 3px;
   box-shadow: rgb(16, 33, 42) 0px -4px 0px 0px inset;
+  margin-right: 15px;
   
 
+}
+.turn h3{
+  padding-right: 25px;
+  color: rgb(168, 191, 201) ;
+  padding-bottom: 3px;
+  font-size: 16px;
 }
 .reset{
   display: flex;
@@ -160,7 +179,7 @@ border-radius: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr ;
-  column-gap: 22px;
+  column-gap: 20px;
   row-gap: 20px;
 }
 .gameboard div{
@@ -174,28 +193,28 @@ border-radius: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  margin-top: 10px;
+  margin-top: 18px;
 
 }
 .player1score{
   background-color: #31c3bd;
   width: 140px;
   height: 72px;
-  border-radius: 15px;
+  border-radius: 11px;
 
 }
 .tiescore{
   background-color: #a8bfc9;
   width: 140px;
   height: 72px;
-  border-radius: 15px;
+  border-radius: 11px;
 
 }
 .player2score{
   background-color: #f2b137;
   width: 140px;
   height: 72px;
-  border-radius: 15px;
+  border-radius: 11px;
 
 }
 .scoreboard div h3,p{
@@ -208,3 +227,5 @@ border-radius: 12px;
 .scoreboard p{
   font-size: 26px;
 }
+
+
